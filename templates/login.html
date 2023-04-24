@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Easy Yatra</title>
+    <link rel="stylesheet" href="static\css\style.css">
+    <link href="{{ url_for('static', filename='img/1.png') }}">
+</head>
+<body>
+    <div class="bgmain"style="background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url({{ url_for('static', filename='img/1.png') }});
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;">
+        <div class="navbar">
+            
+            <div class="icon">
+                <h2 class="logo">EasyYatra</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            
+            <div class="search">
+                <input  class="srch" type="search" name="" placeholder="Search">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+            <div class="content">
+                <h1>Easy Yatra </h1>
+                <br>
+                <p class="par">Easy Yatra is a platform which makes your <br> travel easy by reducing your waiting time at the Airport. <br> 
+                It is the only app in the world in whoch you can submit your travel <br> details sitting at your home with just your fingerprint.</p>
+                <button class="cn"><a href="#"> Contact Us</a></button>
+            </div>
+
+            <form class="form" method="POST" action="/">
+                <h2> Login Here </h2>
+                <p>
+                    Email ID <input type="email" name="email" placeholder="Enter your Email"/>
+                    <br />
+                    Name <input type="text" name="name" placeholder="Enter your name" />
+                    <br />
+                    Password <input type="password" name="password" placeholder="Enter your password"/>
+                    <br />
+                </p>
+                    <button type="submit" class="btnn" > Login </button>
+
+                    <p class="link"> Don't have an account<br>
+                    <a href="#">Sign Up Here</a></p>
+            </form>
+
+        </div>
+    </div>
+</body>    
+</html>
