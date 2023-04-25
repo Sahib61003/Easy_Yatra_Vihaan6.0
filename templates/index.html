@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <link rel="stylesheet" href="static\css\indexstyle.css">
-<link href="{{ url_for('static', filename='img/1.png') }}">
+<img src="{{ url_for('static', filename='img/1.png') }}" alt="image">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     left: 0;
     bottom: 0;
     right: 0;">
-    <h1> Welcome to Easy Yatra </h1>
+    <h1> <marquee> Welcome to Easy Yatra </marquee> </h1>
     <div class="form">
     <form method="POST" action="/index" enctype="multipart/form-data">
     Passport Number <input type="text" name="passport" />
